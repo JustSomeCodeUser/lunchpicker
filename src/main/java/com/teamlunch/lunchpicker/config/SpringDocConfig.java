@@ -11,7 +11,7 @@ public class SpringDocConfig {
     public GroupedOpenApi publicApi() {
         return GroupedOpenApi.builder()
                 .group("springshop-public")
-                .pathsToMatch("/api/choices/**") // Update this line to match your controller's path
+                .pathsToMatch("/api/**")
                 .build();
     }
 }

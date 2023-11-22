@@ -2,6 +2,7 @@ package com.teamlunch.lunchpicker.controller;
 
 import com.teamlunch.lunchpicker.model.Restaurant;
 import com.teamlunch.lunchpicker.repository.RestaurantRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +17,7 @@ public class RestaurantController {
     private RestaurantRepository restaurantRepository;
 
     @PostMapping
-    public Restaurant addRestaurant(@RequestBody Restaurant restaurant) {
+    public Restaurant addRestaurant(@Valid @RequestBody Restaurant restaurant) {
         return restaurantRepository.save(restaurant);
     }
 
