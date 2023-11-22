@@ -47,7 +47,7 @@ Access the full API documentation and test the endpoints using the Postman colle
 
 ### Prerequisites
 
-- Docker installed on your machine (Linux or Windows)
+- Docker and Java 17 installed on your machine (Linux or Windows)
 
 ### Steps
 
